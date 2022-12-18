@@ -1,0 +1,58 @@
+button {
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.container {
+  width: 30rem;
+  background: white;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 7px;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.form {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.input {
+  width: 80%;
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border-radius: 7px 0 0 7px;
+  border: none;
+  font-size: 1rem;
+}
+
+.justInput {
+  background: #e3f1f7;
+}
+
+.editInput {
+  background: #ff8181;
+  color: white;
+}
+
+.subBtn {
+  height: 2rem;
+  border-radius: 0 7px 7px 0;
+  padding: 0.5rem;
+}
+
+.submitBtn {
+  background: #9ed6ed;
+}
+
+.editBtn {
+  background: #ff1818;
+  color: white;
+}

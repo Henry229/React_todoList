@@ -1,0 +1,28 @@
+ul {
+  list-style: none;
+  padding: 0 0.5rem;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 1rem;
+}
+
+.editBtn {
+  color: green;
+  transition: transform 300ms ease-in;
+}
+
+.editBtn:hover {
+  transform: scale(1.2);
+}
+
+.deleteBtn {
+  color: red;
+  transition: transform 300ms ease-in;
+}
+
+.deleteBtn:hover {
+  transform: scale(1.2);
+}
