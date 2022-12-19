@@ -9,6 +9,10 @@ li {
   margin: 0.5rem 1rem;
 }
 
+.checkBox {
+  margin-right: 0.5rem;
+}
+
 .editBtn {
   color: green;
   transition: transform 300ms ease-in;

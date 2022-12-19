@@ -42,7 +42,7 @@ const App = () => {
 
   return (
     <section className={styles.container}>
-      <h1>Shopping List</h1>
+      <h1>To Do List</h1>
       <form className={styles.form} onSubmit={submit}>
         <input
           type='text'
@@ -51,7 +51,7 @@ const App = () => {
             editFlag ? styles.editInput : styles.justInput
           }`}
           onChange={(event) => setItem(() => event.target.value)}
-          placeholder='eg. milk'
+          placeholder='eg. workout'
         />
         <button
           type='submit'
