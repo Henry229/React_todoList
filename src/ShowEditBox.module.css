@@ -1,0 +1,40 @@
+section {
+  position: relative;
+}
+
+.checkForm {
+  width: 25rem;
+  height: 5rem;
+  background: #fee8c6;
+  position: absolute;
+  top: 0.5rem;
+  left: 1.2rem;
+  padding: 1rem;
+  border-radius: 4px;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.checkInput {
+  width: 80%;
+  height: 2rem;
+  background: #ff8181;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+.valueBtn {
+  height: 2rem;
+  background: #ff1818;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0 5px 5px 0;
+  font-size: 1rem;
+}

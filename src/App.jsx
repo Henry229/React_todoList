@@ -7,6 +7,8 @@ const App = () => {
   const [items, setItems] = useState([]);
   const [item, setItem] = useState('');
   const [editFlag, setEditFlag] = useState('');
+  const [checkItem, setCheckItem] = useState('');
+  const [showBox, setShowBox] = useState('');
   let updated;
 
   const submit = (e) => {
@@ -15,12 +17,14 @@ const App = () => {
     if (editFlag) {
       items.map((list, index) => {
         if (list.id === editFlag) {
+          console.log(`#### list | editFlag : ${list.id} | ${editFlag}`);
           updated = [...items];
           updated[index] = { id: list.id, item };
         }
       });
       setItems(updated);
       setEditFlag('');
+      setShowBox('');
       setItem('');
       return;
     }
@@ -62,7 +66,16 @@ const App = () => {
           {editFlag ? 'Edit' : 'Submit'}
         </button>
       </form>
-      <ShoppingList items={items} editItem={editItem} deleteItem={deleteItem} />
+      <ShoppingList
+        items={items}
+        showBox={showBox}
+        setShowBox={setShowBox}
+        item={item}
+        setItem={setItem}
+        editItem={editItem}
+        deleteItem={deleteItem}
+        submit={submit}
+      />
       <button className={styles.allClearBtn}>Clear All items</button>
     </section>
   );
